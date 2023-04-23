@@ -1,1 +1,1 @@
-/home/oli/.local/share/omf/themes/mytheme/fish_prompt.fish
+/home/oli/.local/share/omf/themes/boxes/fish_prompt.fish

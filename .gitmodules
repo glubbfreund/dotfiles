@@ -7,3 +7,6 @@
 [submodule "Dev/bash"]
 	path = Dev/bash
 	url = https://github.com/glubbfreund/bash-scripts
+[submodule "Src/i3-master-layout"]
+	path = Src/i3-master-layout
+	url = https://github.com/Hippo0o/i3-master-layout
