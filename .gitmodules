@@ -1,0 +1,9 @@
+[submodule ".config/.config/nvim"]
+	path = .config/.config/nvim
+	url = https://github.com/glubbfreund/nvim-config
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/glubbfreund/nvim-config
+[submodule "Dev/bash"]
+	path = Dev/bash
+	url = https://github.com/glubbfreund/bash-scripts

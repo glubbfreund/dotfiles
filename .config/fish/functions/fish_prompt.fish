@@ -1,0 +1,1 @@
+/home/oli/.local/share/omf/themes/mytheme/fish_prompt.fish

@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-center '/home/oli/Bilder/Backgrounds/fedora-29-stock-rk.jpg' 
