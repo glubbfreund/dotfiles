@@ -2,6 +2,7 @@
 
 from i3ipc import Event, Connection
 from optparse import OptionParser
+import os
 
 
 def get_comma_separated_args(option, opt, value, parser):
@@ -110,6 +111,8 @@ def on_window_new(c, e):
     # swap new windows with first node of workspace(master window)
     if options.swap_new:
         c.command("[con_id=%d] swap container with con_id %d" % (new_window.id, new_window.workspace().nodes[0].id))
+
+
 
 
 def on_window_focus(c, e):

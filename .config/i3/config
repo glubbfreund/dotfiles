@@ -33,7 +33,6 @@ exec --no-startup-id pasystray --notify=all --volume-max=100
 exec --no-startup-id picom -b
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id gxkb &
-#exec --no-startup-id python ~/Dev/py/i3amlayout/main.py 
 exec_always --no-startup-id $HOME/.config/i3/i3-master-layout.py
 exec --no-startup-id thunderbird
 exec --no-startup-id firefox
@@ -82,13 +81,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+c split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# fast toggle between orientation
-bindsym $mod+x split toggle
+bindsym $mod+c split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -190,7 +183,9 @@ mode "gaps" {
         bindsym $mod+g mode "default"
 }
 
+bindsym $mod+x exec --no-startup-id $HOME/.config/i3/i3-swap-master.py
 bindsym $mod+Escape exec --no-startup-id $HOME/.config/i3/i3-swap-master.py
+
 bindsym $mod+i mark --add "swapee"; mode "interchange"
 mode "interchange" {
 	bindsym $mod+1 workspace $ws1
@@ -221,7 +216,7 @@ client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
-gaps inner 20
+gaps inner 10
 smart_gaps on
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
