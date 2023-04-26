@@ -216,6 +216,7 @@ client.background       #FFFFFF
 
 gaps inner 10
 smart_gaps on
+focus_follows_mouse no
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="Preferences$"] floating enable
