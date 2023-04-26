@@ -183,7 +183,7 @@ mode "gaps" {
         bindsym $mod+g mode "default"
 }
 
-bindsym $mod+Enter exec --no-startup-id $HOME/.config/i3/i3-swap-master.py
+bindsym $mod+Return exec --no-startup-id $HOME/.config/i3/i3-swap-master.py
 bindsym $mod+i mark --add "swapee"; mode "interchange"
 mode "interchange" {
 	bindsym $mod+1 workspace $ws1
