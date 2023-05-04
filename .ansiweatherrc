@@ -1,0 +1,20 @@
+location:Sengenthal,DE
+units:metric
+show_daylight:false
+show_uvi:false
+show_wind:false
+show_humidity:false
+greeting_text: 
+symbols:true
+ansi:false
+show_pressure:false
+# Icons
+sun:
+moon:
+clouds:
+rain:󰖗
+fog:󰖑
+mist:\033[34m\xe2\x96\x91
+haze:\033[33m\xe2\x96\x91
+snow:
+thunderstorm:
