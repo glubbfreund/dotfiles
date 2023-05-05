@@ -10,3 +10,9 @@
 [submodule "Src/i3-master-layout"]
 	path = Src/i3-master-layout
 	url = https://github.com/Hippo0o/i3-master-layout
+[submodule "Src/ansiweather"]
+	path = Src/ansiweather
+	url = https://github.com/fcambus/ansiweather
+[submodule "Src/i3spotifystatus"]
+	path = Src/i3spotifystatus
+	url = https://github.com/rpieja/i3spotifystatus
