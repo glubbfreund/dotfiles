@@ -23,7 +23,7 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 # they are included here as an example. Modify as you see fit.
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/Dev/bash/lock --nofork
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id ~/Dev/bash/weather &
 
@@ -228,7 +228,7 @@ for_window [class="Blueman-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Audacity"] floating enable
 default_floating_border normal
-default_border pixel 2
+default_border pixel 3 
 for_window [class="Spotify"] move scratchpad 
 assign [class="thunderbird"] $ws3
 assign [class="firefox"] $ws2
