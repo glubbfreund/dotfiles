@@ -8,17 +8,19 @@
 
 general {
         output_format = "i3bar"
+        markup = "pango"
         colors = false
         interval = 5
 }
 
-order += "cpu_usage"
-order += "memory"
-order += "disk /"
+#order += "cpu_usage"
+#order += "memory"
+#order += "disk /"
 order += "ethernet eno1"
 order += "wireless wlo1"
 order += "read_file weather"
 order += "tztime date"
+order += "read_file xkb"
 order += "tztime clock"
 
 cpu_usage {
@@ -39,11 +41,15 @@ disk "/" {
    format = "󰋊 %free"
            }
 tztime clock {
-        format = " %H:%M  "
+        format = "<span color='#83cafa'> %time</span> <span color='#444444'></span>"
+        format_time = "%H:%M"
 }
 tztime date {
         format = " %d.%m"
 }     
+read_file xkb {
+    path = "/home/oli/Src/xkblayout-state/xkb"
+}
 read_file weather {
     path = "/home/oli/Src/ansiweather/weather"
 }
