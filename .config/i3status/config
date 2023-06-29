@@ -20,7 +20,9 @@ order += "ethernet eno1"
 order += "wireless wlo1"
 order += "read_file weather"
 order += "tztime date"
+order += "read_file vol"
 order += "read_file xkb"
+order += "battery 0" 
 order += "tztime clock"
 
 cpu_usage {
@@ -39,7 +41,7 @@ ethernet eno1 {
 }
 disk "/" {
    format = "󰋊 %free"
-           }
+}
 tztime clock {
         format = "<span color='#83cafa'> %time</span> <span color='#444444'></span>"
         format_time = "%H:%M"
@@ -50,6 +52,17 @@ tztime date {
 read_file xkb {
     path = "/home/oli/Src/xkblayout-state/xkb"
 }
+read_file vol {
+    path = "/home/oli/Dev/bash/vol"
+}
 read_file weather {
     path = "/home/oli/Src/ansiweather/weather"
+}
+battery 0 {
+    format = "%status%percentage"
+    status_chr = " "
+    status_bat = "󱟤 "
+    status_unk = " "
+    status_full = "󱟢"
+	integer_battery_capacity = true
 }

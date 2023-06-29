@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-center '/home/oli/Bilder/Backgrounds/fedora.jpg' 
+feh --no-fehbg --bg-fill '/home/oli/Bilder/Backgrounds/suse.jpg' 
