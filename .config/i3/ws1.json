@@ -9,41 +9,18 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
-            "current_border_width": 1,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1060,
-               "width": 1920,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "terminal",
-            "percent": 0.75,
-            "swallows": [
-               {
-               // "class": "^kitty$",
-               // "instance": "^kitty$",
-               // "machine": "^Olis\\-Notebook$",
-               "title": "^terminal$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            // splith split container with 2 children
+            // splith split container with 1 children
             "border": "pixel",
             "floating": "auto_off",
             "layout": "splith",
             "marks": [],
-            "percent": 0.25,
+            "percent": 0.65,
             "type": "con",
             "nodes": [
                 {
                     "border": "pixel",
                     "current_border_width": 1,
-                    "floating": "user_off",
+                    "floating": "auto_off",
                     "geometry": {
                        "height": 1060,
                        "width": 1920,
@@ -51,14 +28,48 @@
                        "y": 0
                     },
                     "marks": [],
-                    "name": "radio",
-                    "percent": 0.3,
+                    "name": "terminal_oben",
+                    "percent": 1,
                     "swallows": [
                        {
                        // "class": "^kitty$",
                        // "instance": "^kitty$",
                        // "machine": "^Olis\\-Notebook$",
-                       "title": "^radio$"
+                       "title": "^terminal_oben$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            // stacked split container with 2 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "stacked",
+            "marks": [],
+            "percent": 0.35,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 226,
+                       "width": 278,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "name": "terminal",
+                    "percent": 0.55,
+                    "swallows": [
+                       {
+                       // "class": "^kitty$",
+                       // "instance": "^kitty$",
+                       // "machine": "^Olis\\-Notebook$",
+                       "title": "^terminal$"
                        }
                     ],
                     "type": "con"
@@ -74,14 +85,14 @@
                        "y": 0
                     },
                     "marks": [],
-                    "name": "terminal2",
-                    "percent": 0.7,
+                    "name": "ranger",
+                    "percent": 0.45,
                     "swallows": [
                        {
                        // "class": "^kitty$",
                        // "instance": "^kitty$",
                        // "machine": "^Olis\\-Notebook$",
-                       "title": "^terminal2$"
+                       "title": "^ranger$"
                        }
                     ],
                     "type": "con"

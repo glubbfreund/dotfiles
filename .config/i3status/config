@@ -44,16 +44,18 @@ disk "/" {
    format = "󰋊 %free"
 }
 tztime clock {
-        format = "<span color='#83cafa'>%time</span>"
+        format = "%time"
         format_time = "%H:%M"
 }
 tztime date {
         format = " %d.%m"
 }     
 read_file xkb {
-    path = "/home/oli/Src/xkblayout-state/xkb"
+    format_bad = "<span color='#83cafa'> gr</span>"
+    path = "/home/oli/Dev/bash/xkb"
 }
 read_file vol {
+    format_bad = "<span color='#83cafa'>󰎄 --</span>"
     path = "/home/oli/Dev/bash/vol"
 }
 read_file weather {
