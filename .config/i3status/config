@@ -44,7 +44,7 @@ disk "/" {
    format = "󰋊 %free"
 }
 tztime clock {
-        format = "<span color='#83cafa'> %time</span>    "
+        format = "<span color='#83cafa'>%time</span>"
         format_time = "%H:%M"
 }
 tztime date {
