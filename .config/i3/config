@@ -24,7 +24,7 @@ exec --no-startup-id i3-msg "workspace 2; exec firefox"
 exec --no-startup-id i3-msg "workspace 1; append_layout ~/.config/i3/ws1.json"
 exec --no-startup-id i3-msg "workspace 1; exec ~/Dev/bash/startup" 
 exec --no-startup-id ~/Dev/bash/weather &
-exec --no-startup-id setxkbmap -layout de,gr -option caps:swapescape
+exec --no-startup-id setxkbmap -layout de,gr -option caps:escape
 exec --no-startup-id nm-applet & 
 exec --no-startup-id picom -b
 exec --no-startup-id xfce4-power-manager
@@ -136,10 +136,10 @@ bindsym $mod+Right move workspace to output right
 bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-       bindsym h resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym j resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+       bindsym h resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym j resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -187,7 +187,6 @@ mode "interchange" {
 	bindsym Return swap container with mark "swapee"; unmark "swapee"; mode "default";
 	bindsym Escape unmark "swapee"; mode "default";
     bindsym Escape mode "default"
-    bindsym $mod+i mode "default"
 }
 
 # class                 border  bground text    indicator child_border

@@ -5,7 +5,7 @@
     "floating": "auto_off",
     "layout": "splitv",
     "marks": [],
-    "percent": 0.6,
+    "percent": 0.55,
     "type": "con",
     "nodes": [
         {
@@ -42,7 +42,7 @@
                "y": 0
             },
             "marks": [],
-            "name": "~",
+            "name": "terminal2",
             "percent": 0.4,
             "swallows": [
                {
@@ -63,7 +63,7 @@
     "floating": "auto_off",
     "layout": "splitv",
     "marks": [],
-    "percent": 0.4,
+    "percent": 0.45,
     "type": "con",
     "nodes": [
         {
