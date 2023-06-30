@@ -16,6 +16,7 @@ general {
 #order += "cpu_usage"
 #order += "memory"
 #order += "disk /"
+order += "read_file radio"
 order += "ethernet eno1"
 order += "wireless wlo1"
 order += "read_file weather"
@@ -57,6 +58,10 @@ read_file vol {
 }
 read_file weather {
     path = "/home/oli/Src/ansiweather/weather"
+}
+read_file radio {
+    format = "<span color='#444444'></span>  <span color='#9ec600'>%content</span>"
+    path = "/home/oli/Dev/bash/station"
 }
 battery 0 {
     format = "%status%percentage"

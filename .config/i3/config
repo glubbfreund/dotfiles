@@ -24,6 +24,7 @@ exec --no-startup-id i3-msg "workspace 2; exec firefox"
 exec --no-startup-id i3-msg "workspace 1; append_layout ~/.config/i3/ws1.json"
 exec --no-startup-id i3-msg "workspace 1; exec ~/Dev/bash/startup" 
 exec --no-startup-id ~/Dev/bash/weather &
+exec --no-startup-id ~/Dev/bash/radio &
 exec --no-startup-id setxkbmap -layout de,gr -option caps:escape
 exec --no-startup-id nm-applet & 
 exec --no-startup-id picom -b
@@ -197,7 +198,7 @@ client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
-gaps inner 10
+gaps inner 25
 smart_gaps on
 smart_borders on
 focus_follows_mouse no
