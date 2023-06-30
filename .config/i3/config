@@ -187,7 +187,6 @@ mode "interchange" {
 	bindsym l focus right
 	bindsym Return swap container with mark "swapee"; unmark "swapee"; mode "default";
 	bindsym Escape unmark "swapee"; mode "default";
-    bindsym Escape mode "default"
 }
 
 # class                 border  bground text    indicator child_border
@@ -213,7 +212,7 @@ for_window [class="Blueman-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Audacity"] floating enable
 for_window [class="Steam"] floating enable
-default_border pixel 2
+default_border pixel 1
 default_floating_border normal
 for_window [class="Spotify"] move scratchpad 
 assign [class="thunderbird"] $ws3

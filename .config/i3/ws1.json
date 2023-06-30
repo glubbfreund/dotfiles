@@ -20,7 +20,7 @@
             },
             "marks": [],
             "name": "terminal",
-            "percent": 0.65,
+            "percent": 0.75,
             "swallows": [
                {
                // "class": "^kitty$",
@@ -37,7 +37,7 @@
             "floating": "auto_off",
             "layout": "splith",
             "marks": [],
-            "percent": 0.35,
+            "percent": 0.25,
             "type": "con",
             "nodes": [
                 {
