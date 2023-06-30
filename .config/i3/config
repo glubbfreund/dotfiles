@@ -43,6 +43,7 @@ bindsym $mod+m [class="Spotify"] scratchpad show
 bindsym $mod+t [class="thunderbird"] scratchpad show
 bindsym $mod+p [title="PyRadio*"] scratchpad show
 bindsym $mod+q [title="pacmixer*"] scratchpad show
+bindsym $mod+y [title="floatterm*"] scratchpad show
 bindsym Print exec flameshot gui
 
 # kill focused window
@@ -193,7 +194,7 @@ mode "interchange" {
 }
 
 # class                 border  bground text    indicator child_border
-client.focused          #8C8C8C #005577 #FFFFFF #83CAFA   #005577
+client.focused          #8C8C8C #005577 #FFFFFF #007799   #005577
 client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #222222 
 client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
 client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
@@ -204,7 +205,6 @@ gaps inner 25
 smart_gaps on
 smart_borders on
 focus_follows_mouse no
-for_window [all] title_window_icon yes 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="Preferences$"] floating enable
@@ -223,22 +223,24 @@ for_window [class="Spotify"] move scratchpad
 for_window [class="thunderbird"] move scratchpad
 for_window [title="PyRadio*"] move scratchpad
 for_window [title="pacmixer*"] move scratchpad
+for_window [title="floatterm*"] move scratchpad
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  separator_symbol "   "
-  tray_output DP-0
-  colors {
-    background #222222
-    statusline #888888
-    separator  #444444
+    font pango:DejaVu Sans Mono 8 
+    separator_symbol "   "
+    tray_output DP-0
+    colors {
+        background #222222
+        statusline #888888
+        separator  #444444
 
-    focused_workspace  #8C8C8C #005577 #FFFFFF
-    active_workspace   #3C6EB4 #294172 #FFFFFF
-    inactive_workspace #8C8C8C #222222 #888888
-    urgent_workspace   #EC69A0 #DB3279 #FFFFFF
-    binding_mode       #b691d3 #A07CBC #FFFFFF
-  }
-  status_command i3status | ~/Src/i3spotifystatus/pystatus.py 
+        focused_workspace  #8C8C8C #005577 #FFFFFF
+        active_workspace   #3C6EB4 #294172 #FFFFFF
+        inactive_workspace #8C8C8C #222222 #888888
+        urgent_workspace   #EC69A0 #DB3279 #FFFFFF
+        binding_mode       #b691d3 #A07CBC #FFFFFF
+    }
+    status_command i3status | ~/Src/i3spotifystatus/pystatus.py 
 }
