@@ -1,0 +1,7 @@
+notify-send
+-i
+ICON
+-t
+6000
+TITLE
+MSG
