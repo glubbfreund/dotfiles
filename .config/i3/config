@@ -15,6 +15,7 @@ set $mod Mod4
 # font pango:UbuntuMono Nerd Font Mono 11 
 font pango:DejaVu Sans Mono 8 
 
+exec --no-startup-id xrandr --auto --output DP-2 --mode 1920x1080 --right-of DP-0
 exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/Dev/bash/lock --nofork
 exec --no-startup-id /usr/libexec/xfce4/notifyd/xfce4-notifyd &
@@ -23,7 +24,7 @@ exec --no-startup-id i3-msg "workspace 2; exec firefox"
 exec --no-startup-id i3-msg "workspace 1; append_layout ~/.config/i3/ws1.json"
 exec --no-startup-id i3-msg "workspace 1; exec ~/Dev/bash/startup" 
 exec --no-startup-id ~/Dev/bash/weather &
-exec --no-startup-id setxkbmap -layout de,gr
+exec --no-startup-id setxkbmap -layout de,gr -option caps:swapescape
 #exec --no-startup-id nm-applet & 
 #exec --no-startup-id gxkb &
 exec --no-startup-id picom -b
@@ -60,12 +61,6 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -135,6 +130,10 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+# move workspaces to other output
+bindsym $mod+Left move workspace to output left
+bindsym $mod+Right move workspace to output right
+
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -201,7 +200,7 @@ client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
-gaps inner 25
+gaps inner 10
 smart_gaps on
 smart_borders on
 focus_follows_mouse no
@@ -220,8 +219,6 @@ default_border pixel 1
 default_floating_border normal
 for_window [class="Spotify"] move scratchpad 
 assign [class="thunderbird"] $ws3
-workspace $ws2 output DP-0
-workspace $ws3 output DP-0
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
