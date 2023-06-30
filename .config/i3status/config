@@ -44,7 +44,7 @@ disk "/" {
    format = "󰋊 %free"
 }
 tztime clock {
-        format = "<span color='#83cafa'> %time</span> <span color='#444444'></span>"
+        format = "<span color='#83cafa'> %time</span>    "
         format_time = "%H:%M"
 }
 tztime date {
@@ -60,7 +60,7 @@ read_file weather {
     path = "/home/oli/Src/ansiweather/weather"
 }
 read_file radio {
-    format = "<span color='#444444'></span>  <span color='#9ec600'>%content</span>"
+    format = "<span color='#9ec600'>%content</span>"
     path = "/home/oli/Dev/bash/station"
 }
 battery 0 {
