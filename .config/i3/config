@@ -26,6 +26,7 @@ exec --no-startup-id i3-msg "workspace 1; exec ~/Dev/bash/startup"
 exec --no-startup-id ~/Dev/bash/weather &
 exec --no-startup-id ~/Dev/bash/radio &
 exec --no-startup-id setxkbmap -layout de,gr -option caps:escape
+exec --no-startup-id udiskie -t &
 exec --no-startup-id nm-applet & 
 exec --no-startup-id picom -b
 exec --no-startup-id xfce4-power-manager
