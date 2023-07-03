@@ -5,9 +5,8 @@ picom -b &
 ~/Dev/bash/weather &
 ~/Dev/bash/radio &
 nm-applet &
-blueman-applet &
-xfce4-power-manager &
 udiskie -t &
 xrandr --auto --output DP-2 --mode 1920x1080 --right-of DP-0
 /usr/libexec/xfce4/notifyd/xfce4-notifyd &
 setxkbmap -layout de,gr -option caps:escape
+blueman-applet &
