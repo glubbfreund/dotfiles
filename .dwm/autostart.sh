@@ -8,6 +8,6 @@ picom -b &
 nm-applet &
 udiskie -t &
 xfce4-power-manager &
-blueman-applet
-xrandr --auto --output DP-2 --mode 1920x1080 --right-of DP-0
+blueman-applet &
 setxkbmap -layout de,gr -option caps:escape
+xrandr --auto --output DP-2 --mode 1920x1080 --right-of DP-0
