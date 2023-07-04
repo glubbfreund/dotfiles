@@ -24,7 +24,7 @@ exec --no-startup-id python ~/Dev/py/scripts/i3-orientation.py &
 exec --no-startup-id ~/Dev/bash/weather &
 exec --no-startup-id ~/Dev/bash/radio &
 exec --no-startup-id kitty -e pacmixer &
-exec --no-startup-id kitty -e pyradio &
+exec --no-startup-id kitty sh -c "pyradio --log-titles" &
 exec --no-startup-id kitty --title "floatterm" &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id setxkbmap -layout de,gr -option caps:escape
