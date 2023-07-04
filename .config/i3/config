@@ -21,8 +21,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/Dev/bash/lock --nofork
 exec --no-startup-id /usr/libexec/xfce4/notifyd/xfce4-notifyd &
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id python ~/Dev/py/scripts/i3-orientation.py &
+exec --no-startup-id python ~/Dev/py/scripts/i3-swallow.py &
 exec --no-startup-id ~/Dev/bash/weather &
 exec --no-startup-id ~/Dev/bash/radio &
+exec --no-startup-id ~/Dev/bash/pidswallow --loop &
 exec --no-startup-id kitty -e pacmixer &
 exec --no-startup-id kitty sh -c "pyradio --log-titles" &
 exec --no-startup-id kitty --title "floatterm" &

@@ -45,7 +45,7 @@ disk "/" {
 }
 tztime clock {
         format = "<span color='#83cafa'>%time</span>"
-        format_time = "%H:%M"
+        format_time = "%H:%M "
 }
 tztime date {
         format = " %d.%m"
