@@ -15,13 +15,12 @@ set $mod Mod4
 # font pango:UbuntuMono Nerd Font Mono 11 
 font pango:DejaVuSansM Nerd Font 8 
 
+exec --no-startup-id python ~/.config/i3/i3-orientation.py &
 exec --no-startup-id xrandr --auto --output DP-2 --mode 1920x1080 --right-of DP-0
 exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/Dev/bash/lock --nofork
 exec --no-startup-id /usr/libexec/xfce4/notifyd/xfce4-notifyd &
 exec --no-startup-id ~/.fehbg &
-exec --no-startup-id python ~/Dev/py/scripts/i3-orientation.py &
-exec --no-startup-id python ~/Dev/py/scripts/i3-swallow.py &
 exec --no-startup-id ~/Dev/bash/weather &
 exec --no-startup-id ~/Dev/bash/radio &
 exec --no-startup-id ~/Dev/bash/pidswallow --loop &
