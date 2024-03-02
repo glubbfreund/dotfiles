@@ -55,12 +55,9 @@ fi
 # alias configuration
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vim='nvim'
-alias yay='paru'
-alias arch-update='paru && sudo flatpak update'
 alias suvim='sudo -Es nvim'
 
 # add addons (as debian package) and enable starship
-#source /usr/share/zsh-window-title/zsh-window-title.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
