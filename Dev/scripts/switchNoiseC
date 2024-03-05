@@ -1,0 +1,11 @@
+#!/bin/bash
+pwpath="$HOME/.config/pipewire"
+
+if [ -d "$pwpath" ]; then
+  mv $pwpath "$pwpath.disabled"
+  echo "Noisecancelling device disabled."
+else 
+  mv "$pwpath.disabled" $pwpath
+  echo "Noisecancelling device enabled."
+fi
+systemctl restart --user pipewire.service
